@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-//import { Pagina1Component } from './pagina1/pagina1.component';
-//import { Pagina2Component } from './pagina2/pagina2.component';
+import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
+import { CadastroClientesComponent } from './cadastro-clientes/cadastro-clientes.component';
 
 const routes: Routes = [
-//{ path: '', redirectTo: '/pagina1', pathMatch: 'full' },
-//{ path: 'pagina1', component: Pagina1Component },
-//{ path: 'pagina2', component: Pagina2Component }
+{ path: '', redirectTo: '/home', pathMatch: 'full' },
+{ path: 'cadastro-clientes', component: CadastroClientesComponent },
+{ path: 'login', component: LoginComponent }
 
 ];
 
